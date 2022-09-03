@@ -1,0 +1,35 @@
+{
+    "name": "riaucoder/laravel-auth",
+    "description": "Simple laravel auth using tailwindCSS with daisyUI plugin",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Riaucoder\\LaravelAuth\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Riaucoder\\LaravelAuth\\CoderAuthServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Edo Pranata",
+            "email": "edo.pranata@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0.2",
+        "illuminate/console": "^9.21",
+        "illuminate/filesystem": "^9.21",
+        "illuminate/support": "^9.21",
+        "illuminate/validation": "^9.21"
+    },
+    "conflict": {
+        "laravel/framework": "<9.19.0"
+    }
+}
