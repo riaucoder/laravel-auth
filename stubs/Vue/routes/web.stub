@@ -25,6 +25,10 @@ Route::middleware(['auth'])->group(function (){
     Route::middleware(['verified', 'password.confirm'])->group(function (){
         Route::group(['prefix' => 'dashboard', 'as' => 'dashboard.'], function (){
             Route::get('/', [\App\Http\Controllers\DashboardController::class, 'index'])->name('index');
+            Route::get('blank', [\App\Http\Controllers\DashboardController::class, 'blank'])->name('blank');
+        });
+        Route::group(['prefix' => 'blank', 'as' => 'blank.'], function (){
+            Route::get('/', [\App\Http\Controllers\DashboardController::class, 'blank'])->name('index');
         });
     });
 

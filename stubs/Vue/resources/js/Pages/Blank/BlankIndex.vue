@@ -3,7 +3,8 @@
 
     <Breadcrumb :links="breadcrumbs"/>
 
-    <PageTitle :classes="'bg-base-content'" class="">Dashboard</PageTitle>
+    <PageTitle :classes="'bg-base-content'" class="">Blank Page</PageTitle>
+
     <section class="px-4 flex flex-wrap gap-4">
 
     </section>
@@ -18,8 +19,12 @@ import Breadcrumb from "@/Shared/Breadcrumb.vue";
 
 const breadcrumbs = [
     {
-        "url": null,
+        "url": route('dashboard.index'),
         "label": "Dashboard"
-    }
+    },
+    {
+        "url": null,
+        "label": "Blank"
+    },
 ]
 </script>
