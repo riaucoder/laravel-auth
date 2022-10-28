@@ -21,11 +21,14 @@ trait VueInstall
                     '@inertiajs/progress' => '^0.2.7',
                     '@tailwindcss/forms' => '^0.5.2',
                     '@vitejs/plugin-vue' => '^3.0.0',
+                    '@kyvg/vue3-notification' => '^2.4.1',
+                    '@mdi/js' => '^7.0.96',
                     'autoprefixer' => '^10.4.2',
                     'postcss' => '^8.4.6',
                     'tailwindcss' => '^3.1.0',
                     'vue' => '^3.2.31',
                     'daisyui' => '^2.24.0',
+                    'path' => '^0.12.7',
                 ] + $packages;
         });
 
